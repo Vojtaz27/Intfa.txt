@@ -1,0 +1,4 @@
+﻿  Zajęcia_3.cpp
+D:\GitHub\Intfa.txt\3_sem\Zajęcia_3\Zajęcia_3\Zajęcia_3.cpp(63,36): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\GitHub\Intfa.txt\3_sem\Zajęcia_3\Zajęcia_3\Zajęcia_3.cpp(104,38): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  Zajęcia_3.vcxproj -> D:\GitHub\Intfa.txt\3_sem\Zajęcia_3\Debug\Zajęcia_3.exe
