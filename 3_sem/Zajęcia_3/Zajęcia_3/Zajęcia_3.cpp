@@ -28,7 +28,7 @@ public:
         pojemnosc = (R * R * S * N) / 1000;
     }
 
-    double return_moc() {
+    double return_moc() {                       //te funkcje return są w zaszadzie niepotrzebne
         return moc;
     }
     double return_pojemnosc() {
@@ -151,7 +151,14 @@ public:
 
 int main()
 {
-  
+    Motor a;
+    Motor b;
+    a.wyswietl();
+    b.wyswietl();
+    cout << endl << endl;
+    Motor c = a + b;
+    c.wyswietl();
+    return 0;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
