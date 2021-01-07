@@ -48,7 +48,7 @@ public:
 	
 	}
 	void wyswietl_l() {
-		cout << cena << " " << numer << endl;
+		cout << " Cena: " << cena << " numer: " << numer << endl;
 		if (next) next->wyswietl_l();
 	
 	}
@@ -77,7 +77,11 @@ int main() {
 	Produkt* rl = new Produkt();
 	for (int i = 0; i < 49; i++) {
 		Produkt* pk = new Produkt();
-		rl->wstaw_l(pk);
+		if (rl->return_numer() > pk->return_numer()) {
+			pk->next = rl;
+			rl = pk;
+		}
+		else rl->wstaw_l(pk);
 	}
 
 	rl->wyswietl_l();
@@ -145,7 +149,6 @@ int main() {
 				supp->next = NULL;
 				rd->wstaw_d(supp);
 				if (!rl) break;
-
 			}
 		}
 		if (rl and rd) {
@@ -162,9 +165,6 @@ int main() {
 				else supp = supp->next;
 			}
 		}
-		
-		
-
 	}
 	else {
 		Produkt* supp = rl;
